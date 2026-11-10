@@ -1,0 +1,16 @@
+.floating-contact { position: fixed; z-index: 15; right: 5.2%; bottom: 24px; display: flex; gap: 9px; }
+.floating-text, .floating-whatsapp {
+  display: flex; align-items: center; justify-content: center; gap: 12px; min-height: 68px;
+  padding: 0 24px; border-radius: 50px; background: #fff; box-shadow: 0 6px 24px rgba(14,32,38,.16);
+  font-size: 19px; transition: transform .2s, box-shadow .2s;
+}
+.floating-text:hover, .floating-whatsapp:hover { transform: translateY(-3px); box-shadow: 0 10px 28px rgba(14,32,38,.2); }
+.floating-text svg, .floating-whatsapp svg { width: 24px; height: 24px; stroke-width: 2.4; }
+.floating-whatsapp { padding: 0 19px; }
+.floating-whatsapp span { font-size: 14px; }
+@media (max-width: 600px) {
+  .floating-contact { right: 15px; bottom: 14px; }
+  .floating-text, .floating-whatsapp { min-height: 54px; padding: 0 18px; font-size: 16px; }
+  .floating-whatsapp { width: 54px; padding: 0; }
+  .floating-whatsapp span { display: none; }
+}

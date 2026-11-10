@@ -1,0 +1,14 @@
+.story-section { padding: 92px 20px 116px; text-align: center; }
+.story-kicker { margin: 0 0 13px; font-size: 11px; font-weight: 600; letter-spacing: .19em; }
+.story-section h2 {
+  margin: 0 auto 34px; font-family: "Caveat", cursive; font-size: clamp(38px, 5vw, 56px);
+  font-weight: 600; line-height: 1.05;
+}
+.story-copy { max-width: 730px; margin: auto; font-size: clamp(15px, 1.5vw, 19px); line-height: 1.85; }
+.story-copy p { margin: 0 0 20px; }
+.story-copy strong { font-weight: 700; }
+@media (max-width: 600px) {
+  .story-section { padding: 62px 22px 80px; }
+  .story-section h2 { margin-bottom: 25px; }
+  .story-copy { font-size: 15px; line-height: 1.8; }
+}

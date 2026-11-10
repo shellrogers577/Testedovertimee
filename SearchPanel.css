@@ -1,0 +1,22 @@
+.overlay-backdrop {
+  position: fixed; z-index: 30; inset: 0; display: flex; justify-content: center; align-items: flex-start;
+  padding: 10vh 18px 20px; background: rgba(8,23,30,.42); backdrop-filter: blur(3px);
+}
+.search-panel {
+  width: min(720px, 100%); max-height: 78vh; overflow-y: auto; padding: 26px 30px 22px;
+  border-radius: 20px; background: #f5f5f5; box-shadow: 0 18px 70px rgba(0,0,0,.2);
+}
+.search-top { display: flex; align-items: center; justify-content: space-between; margin-bottom: 23px; font-family: "Caveat", cursive; font-size: 31px; }
+.search-top button { display: grid; place-items: center; width: 44px; height: 44px; border: 0; border-radius: 50%; background: transparent; cursor: pointer; }
+.search-input { display: flex; align-items: center; gap: 12px; min-height: 54px; padding: 0 14px; border: 1px solid rgba(12,39,51,.22); border-radius: 8px; }
+.search-input > svg { width: 19px; }
+.search-input input { flex: 1; min-width: 0; border: 0; outline: 0; background: transparent; font-size: 14px; }
+.search-input kbd { color: #68777c; font-size: 10px; }
+.search-results { margin-top: 15px; }
+.search-result { display: flex; align-items: center; gap: 14px; width: 100%; padding: 10px 0; border: 0; border-bottom: 1px solid rgba(12,39,51,.11); background: transparent; text-align: left; cursor: pointer; }
+.search-result img { width: 55px; height: 55px; border-radius: 8px; object-fit: cover; background: #fff; }
+.search-result > span:nth-child(2) { flex: 1; font-size: 13px; }
+.search-result small { display: block; margin-top: 5px; font-size: 11px; }
+.search-result > span:last-child { font-size: 16px; }
+.search-empty { padding: 20px 0; font-size: 13px; }
+@media (max-width: 560px) { .search-panel { padding: 19px; border-radius: 15px; } .search-top { font-size: 27px; } }

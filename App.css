@@ -1,0 +1,43 @@
+.storefront {
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+  background: #eff0f2;
+}
+
+.verse-strip {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  min-height: 76px;
+  margin: 0 5.2%;
+  overflow: hidden;
+  border-top: 1px solid rgba(12, 39, 51, .12);
+  border-bottom: 1px solid rgba(12, 39, 51, .12);
+  font-size: clamp(13px, 1.5vw, 18px);
+  font-weight: 600;
+  text-align: center;
+}
+.verse-reference { font-weight: 400; white-space: nowrap; }
+.catalog-notice { margin: 8px 6%; color: #7a3d2c; font-size: 13px; text-align: center; }
+.menu-scrim { position: fixed; inset: 0; z-index: 20; background: rgba(8, 24, 31, .34); }
+.mobile-menu {
+  position: fixed; z-index: 21; top: 0; right: 0; width: min(390px, 88vw); height: 100dvh;
+  padding: 78px 34px 32px; background: #eff0f2; transform: translateX(105%);
+  transition: transform .3s ease; box-shadow: -10px 0 40px rgba(0,0,0,.1);
+}
+.mobile-menu--open { transform: translateX(0); }
+.mobile-menu > a {
+  display: flex; justify-content: space-between; align-items: center; min-height: 57px;
+  border-bottom: 1px solid rgba(12,39,51,.15); font-size: 17px;
+}
+.mobile-menu > a span { font-size: 14px; opacity: .6; }
+.mobile-menu .eyebrow { margin-bottom: 20px; font-size: 10px; letter-spacing: .16em; }
+.menu-close {
+  position: absolute; top: 18px; right: 24px; width: 44px; height: 44px;
+  border: 0; border-radius: 50%; background: transparent; font-size: 34px; cursor: pointer;
+}
+@media (max-width: 620px) {
+  .verse-strip { flex-direction: column; gap: 3px; min-height: 80px; padding: 18px 14px; }
+}

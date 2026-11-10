@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&family=Roboto+Slab:wght@400;500;600;700&display=swap");
+
+:root {
+  font-family: "Roboto Slab", Georgia, serif;
+  color: #0c2733;
+  background: #eff0f2;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+
+* { box-sizing: border-box; }
+html { min-width: 320px; scroll-behavior: smooth; }
+body { margin: 0; min-width: 320px; overflow-x: hidden; background: #eff0f2; }
+button, input, textarea { font: inherit; }
+button, a { -webkit-tap-highlight-color: transparent; }
+button { color: inherit; }
+a { color: inherit; text-decoration: none; }
+::selection { color: white; background: #123242; }
+
+@media (max-width: 600px) {
+  html { scroll-padding-top: 12px; }
+  body { -webkit-text-size-adjust: 100%; }
+}
